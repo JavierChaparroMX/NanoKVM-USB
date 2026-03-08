@@ -35,6 +35,12 @@ const de = {
         cancel: 'Abbrechen'
       }
     },
+    screenshot: {
+      button: 'Bildschirmfoto',
+      success: 'Bildschirmfoto in Downloads gespeichert',
+      failed: 'Bildschirmfoto-Erfassung fehlgeschlagen',
+      error: 'Fehler beim Erfassen des Bildschirmfotos'
+    },
     keyboard: {
       paste: 'Einfügen',
       virtualKeyboard: 'Virtuelle Tastatur',

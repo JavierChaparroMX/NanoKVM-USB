@@ -1,12 +1,13 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { Divider } from 'antd';
+import { Divider, message } from 'antd';
 import clsx from 'clsx';
 import { useAtomValue } from 'jotai';
-import { ChevronRightIcon, GripVerticalIcon, XIcon } from 'lucide-react';
+import { Camera, ChevronRightIcon, GripVerticalIcon, XIcon } from 'lucide-react';
 import Draggable from 'react-draggable';
 
 import { serialStateAtom } from '@/jotai/device.ts';
 import * as storage from '@/libs/storage';
+import { captureScreenshot } from '@/libs/screenshot';
 
 import { Audio } from './audio';
 import { Fullscreen } from './fullscreen';
@@ -22,8 +23,26 @@ export const Menu = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(true);
   const [menuBounds, setMenuBounds] = useState({ left: 0, right: 0, top: 0, bottom: 0 });
+  const [isCapturing, setIsCapturing] = useState(false);
 
   const nodeRef = useRef<HTMLDivElement | null>(null);
+
+  const handleScreenshot = () => {
+    setIsCapturing(true);
+    try {
+      const success = captureScreenshot('video', { timestamp: true });
+      if (success) {
+        message.success('Screenshot saved!');
+      } else {
+        message.error('Failed to capture screenshot');
+      }
+    } catch (error) {
+      console.error('Screenshot error:', error);
+      message.error('An error occurred during screenshot capture');
+    } finally {
+      setIsCapturing(false);
+    }
+  };
 
   const handleResize = useCallback(() => {
     if (!nodeRef.current) return;
@@ -102,6 +121,16 @@ export const Menu = () => {
             )}
 
             <Recorder />
+
+            <Divider type="vertical" className="px-0.5" />
+
+            <div
+              className="flex h-[28px] w-[28px] cursor-pointer items-center justify-center rounded text-neutral-300 hover:bg-neutral-700/70 hover:text-white disabled:opacity-50"
+              onClick={handleScreenshot}
+              title="Screenshot"
+            >
+              <Camera size={18} />
+            </div>
 
             <Divider type="vertical" className="px-0.5" />
 

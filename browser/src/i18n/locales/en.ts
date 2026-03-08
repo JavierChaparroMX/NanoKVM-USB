@@ -37,6 +37,12 @@ const en = {
         cancel: 'Cancel'
       }
     },
+    screenshot: {
+      button: 'Screenshot',
+      success: 'Screenshot saved to Downloads',
+      failed: 'Failed to capture screenshot',
+      error: 'An error occurred during screenshot capture'
+    },
     audio: {
       tip: 'Tip',
       permission:

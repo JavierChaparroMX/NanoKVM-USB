@@ -35,6 +35,12 @@ const ko = {
         cancel: '취소'
       }
     },
+    screenshot: {
+      button: '스크린샷',
+      success: '스크린샷이 다운로드 듄더에 저장되었습니다',
+      failed: '스크린샷 캡처 실패',
+      error: '스크린샷 캡처 중 오류 발생'
+    },
     keyboard: {
       paste: '붙여넣기',
       virtualKeyboard: '가상 키보드',

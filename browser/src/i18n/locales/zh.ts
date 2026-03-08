@@ -35,6 +35,12 @@ const zh = {
         cancel: '取消'
       }
     },
+    screenshot: {
+      button: '截图',
+      success: '截图已保存到下载文件夹',
+      failed: '截图捕获失败',
+      error: '截图捕获过程中发生错误'
+    },
     audio: {
       tip: '提示',
       permission:

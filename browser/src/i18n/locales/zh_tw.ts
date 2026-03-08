@@ -31,8 +31,12 @@ const zh_tw = {
         confirm: '確定',
         cancel: '取消'
       }
-    },
-    keyboard: {
+    },    screenshot: {
+      button: '截圖',
+      success: '截圖已保存到下載檔案夾',
+      failed: '截圖捕获失敗',
+      error: '截圖捕获過程中發生錯誤'
+    },    keyboard: {
       paste: '貼上',
       virtualKeyboard: '虛擬鍵盤',
       shortcut: {

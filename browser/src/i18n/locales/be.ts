@@ -35,6 +35,12 @@ const be = {
         cancel: 'Annuleren'
       }
     },
+    screenshot: {
+      button: 'Schermafbeelding',
+      success: 'Schermafbeelding opgeslagen in Downloads',
+      failed: 'Schermafbeelding vastleggen mislukt',
+      error: 'Er is een fout opgetreden bij het maken van een schermafbeelding'
+    },
     keyboard: {
       paste: 'Plakken',
       virtualKeyboard: 'Virtueel klavier',

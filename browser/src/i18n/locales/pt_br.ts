@@ -34,6 +34,12 @@ const pt_br = {
         cancel: 'Cancelar'
       }
     },
+    screenshot: {
+      button: 'Captura de tela',
+      success: 'Captura de tela salva em Downloads',
+      failed: 'Falha ao capturar a tela',
+      error: 'Ocorreu um erro durante a captura de tela'
+    },
     keyboard: {
       paste: 'Colar',
       virtualKeyboard: 'Teclado Virtual',

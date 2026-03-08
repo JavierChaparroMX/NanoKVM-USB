@@ -34,6 +34,12 @@ const pl = {
         cancel: 'Anuluj'
       }
     },
+    screenshot: {
+      button: 'Zrzut ekranu',
+      success: 'Zrzut ekranu zapisany w folderze Pobrane',
+      failed: 'Nie udało się zrobić zrzutu ekranu',
+      error: 'Wystąpił błąd podczas robienia zrzutu ekranu'
+    },
     keyboard: {
       paste: 'Wklej',
       virtualKeyboard: 'Klawiatura',
