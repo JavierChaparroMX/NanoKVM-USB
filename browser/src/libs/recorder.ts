@@ -66,8 +66,6 @@ export function startRecording(videoElementId: string = 'video'): boolean {
       console.error('Video element not found or no stream available');
       return false;
     }
-
-    const stream = videoElement.srcObject as MediaStream;
     
     // Create a canvas to capture the video with consistent quality
     const canvas = document.createElement('canvas');

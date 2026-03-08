@@ -28,6 +28,8 @@ NanoKVM-USB captures HDMI video signals and transmits them to the host via USB 3
 | USB Switch | Yes | Yes | No |
 | Keyboard & Mouse | Yes | Yes | Yes |
 | Clipboard | Yes | Yes | Yes |
+| Screen Recording | Yes | No | No |
+| Screenshots | Yes | No | No |
 | Software | No setup needed, works in Chrome | Host App required | Host App required |
 | Latency | 50-100ms | 50-100ms | 50-100ms |
 | Volume | 57x25x23mm | 61x13.5x53mm | 80x80x10mm |
@@ -40,6 +42,16 @@ NanoKVM-USB captures HDMI video signals and transmits them to the host via USB 3
 ![interface](https://wiki.sipeed.com/hardware/assets/NanoKVM/usb/interface.jpg)
 
 > **Note:** For the best experience, please use a USB 3.0 cable to connect the device.
+
+## Features
+
+- **Real-time Video Streaming** - 4K video capture via USB 3.0
+- **Input Control** - Send keyboard, mouse, and clipboard data in real-time
+- **Screen Recording** - Record display output as MP4 video files
+- **Screenshots** - Capture and save individual screenshots
+- **Multi-language Support** - Supports 10+ languages
+- **No Installation Required** - Works directly in Chrome browser (web version)
+- **HDMI Loop-out** - Connect a display while maintaining USB video stream
 
 ## Resources
 

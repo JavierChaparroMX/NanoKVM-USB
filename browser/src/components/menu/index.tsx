@@ -24,12 +24,10 @@ export const Menu = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(true);
   const [menuBounds, setMenuBounds] = useState({ left: 0, right: 0, top: 0, bottom: 0 });
-  const [isCapturing, setIsCapturing] = useState(false);
 
   const nodeRef = useRef<HTMLDivElement | null>(null);
 
   const handleScreenshot = () => {
-    setIsCapturing(true);
     try {
       const success = captureScreenshot('video', { timestamp: true });
       if (success) {
@@ -40,8 +38,6 @@ export const Menu = () => {
     } catch (error) {
       console.error('Screenshot error:', error);
       message.error('An error occurred during screenshot capture');
-    } finally {
-      setIsCapturing(false);
     }
   };
 

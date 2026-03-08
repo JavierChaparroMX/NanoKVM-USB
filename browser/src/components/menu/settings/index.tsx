@@ -25,7 +25,7 @@ export const Settings = () => {
 
       <div
         className="flex h-[32px] cursor-pointer items-center space-x-2 rounded px-3 text-neutral-300 hover:bg-neutral-700/50"
-        onClick={() => openPage('https://github.com/sipeed/NanoKVM-USB/releases')}
+        onClick={() => openPage('https://github.com/JavierChaparroMX/NanoKVM-USB/releases')}
       >
         <DownloadIcon size={16} />
         <span>{t('settings.download')}</span>

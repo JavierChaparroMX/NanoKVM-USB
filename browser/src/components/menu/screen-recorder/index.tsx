@@ -3,7 +3,7 @@ import { message } from 'antd';
 import { Circle } from 'lucide-react';
 import clsx from 'clsx';
 
-import { startRecording, stopRecording, isRecording as getIsRecording, getRecordingDuration } from '@/libs/recorder';
+import { startRecording, stopRecording, getRecordingDuration } from '@/libs/recorder';
 
 export const ScreenRecorder = () => {
   const [recording, setRecording] = useState(false);
