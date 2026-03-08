@@ -14,6 +14,7 @@ import { Fullscreen } from './fullscreen';
 import { Keyboard } from './keyboard';
 import { Mouse } from './mouse';
 import { Recorder } from './recorder';
+import { ScreenRecorder } from './screen-recorder';
 import { SerialPort } from './serial-port';
 import { Settings } from './settings';
 import { Video } from './video';
@@ -131,6 +132,8 @@ export const Menu = () => {
             >
               <Camera size={18} />
             </div>
+
+            <ScreenRecorder />
 
             <Divider type="vertical" className="px-0.5" />
 
